@@ -7,19 +7,16 @@ def find_even_values(src)
   #
   # Output all even values in each nested array
 count=0
-new_array=[]
 
   while count<src.length do
     inner_count =0
     while inner_count < src[count].length do
       if src[count][inner_count].even?
-        new_array << src[count][inner_count]
+        p src[count][inner_count]
       end
       inner_count += 1
     end
     count += 1
   end
-  new_array
 end
 
-find_even_values(ex_array)
