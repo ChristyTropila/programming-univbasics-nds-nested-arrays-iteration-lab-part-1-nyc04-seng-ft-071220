@@ -13,8 +13,9 @@ new_array=[]
     inner_count =0
     temp=[]
     while inner_count < src[count].length do
-      temp=src[count][inner_count].even?
-      new_array temp
+      if src[count][inner_count].even?
+        new_array << src[count][inner_count]
+      end
       inner_count += 1
     end
     count += 1
